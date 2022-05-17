@@ -15,16 +15,19 @@ Tips: Convert string into a number, wrap z to a, keep same case
 # .ord and .char
 
 def caeser_cipher(string, number)
-    original_array = string.split('')
-    new_values = original_array.map do |letter|
-        (letter.ord % 26) + number
+    # original_array = string.split('')
+    # new_values = original_array.map do |letter|
+    #     (letter.ord % 26) + number
+    # end
+    string.each_char do |c|
+        puts c #hello there
+        puts c.ord
+        new_value = c.ord + number
+        puts new_value
+        puts new_value.chr
     end
+
     
-    new_msg = new_values.map do |value|
-        puts value #works
-        puts value.is_a? Integer #works
-        puts value.chr #prints empty string?
-    end
 end
 
 caeser_cipher("hello there", 5) 

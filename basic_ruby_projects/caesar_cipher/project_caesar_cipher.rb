@@ -1,4 +1,4 @@
-puts "Welcome to Caeser Cipher, enter a letter and a number, and I'll do the rest"
+puts "Welcome to Caesar Cipher, enter a letter and a number, and I'll do the rest"
 
 =begin
 First, let's psuedo code.
@@ -14,7 +14,7 @@ Tips: Convert string into a number, wrap z to a, keep same case
 # ! at the end of a method is called Bang
 # .ord and .char
 
-def caeser_cipher(string, number)
+def caesar_cipher(string, number)
     # original_array = string.split('')
     # new_values = original_array.map do |letter|
     #     (letter.ord % 26) + number
@@ -30,4 +30,4 @@ def caeser_cipher(string, number)
     
 end
 
-caeser_cipher("hello there", 5) 
+caeser_ciphar("hello there z", 5) 
